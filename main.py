@@ -6,7 +6,7 @@ import dataextractor
 
 def print_hi():
 
-    export_dir = "C:\\Users\\Paul\\Documents\\bulk_export\\cosi\\REAL\\"
+    export_dir = "your bulk export dir"
     total = dataextractor.total_create(save=False, bulk_dir=export_dir)
     dataextractor.query_stocks(total, save=True, natFromJobs=True)
     dataextractor.query_flows(total, save=True, natFromJobs=True)
